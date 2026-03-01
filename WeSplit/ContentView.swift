@@ -1,21 +1,18 @@
-//
-//  ContentView.swift
-//  WeSplit
-//
-//  Created by Brayan Duwe on 01/03/26.
-//
-
 import SwiftUI
 
 struct ContentView: View {
+    var students = ["Harry", "Ron", "Hermione"]
+    @State private var selectedStudent = "Harry"
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            Form {
+                Picker("Select a student", selection: $selectedStudent) {
+                    ForEach(students, id: \.self) {
+                        Text($0)
+                    }
+                }
+            } .navigationTitle("Select a Student")
         }
-        .padding()
     }
 }
 
