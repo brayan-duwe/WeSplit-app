@@ -13,7 +13,7 @@ The app structure is very simple, containing only the ContentView.
 
 ## Preview
 
-![WeSplit-GIF](https://github.com/user-attachments/assets/f37bc7b9-d123-4a0a-8b59-77bd812eda12)
+![WeSplit-GIF](https://github.com/user-attachments/assets/75cecd08-f0d8-4194-8335-0b625e1b9ebc)
 
 *If the user doesn't want to tip, the color of the Total Amount section changes to red.*
 
